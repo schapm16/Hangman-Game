@@ -2,18 +2,49 @@
 <html>
     <head>
         <meta lang = "en-us" charset = "UTF-8">
-        <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <link rel = "stylesheet" href = "assets/css/reset.css" type = "text/css" />
+        <link href = "https://fonts.googleapis.com/css?family=Open+Sans|Raleway" 
+        rel = "stylesheet">
+        <link rel = "stylesheet" href = "assets/css/style.css" type = "text/css" />
        
         
     </head>
     
     <body>
-        <p id = "wordDisplay"></p>
-        <p id = "wrongLettersGuessed"></p>
-        <p id = "numGuesses"></p>
         
-         <script type="text/javascript" src="assets/javascript/game.js"></script>
+        <h1>Hangman</h1>
+        <div id = gameBox>
+            <h2>Guess This Word!</h2>
+            <p id = "wordDisplay"></p>
+            
+            <h3>Wrong Letters Guessed</h3>
+            <p id = "wrongLettersGuessed"></p>
+            
+            <h4>Guesses Remaining: <span id = "numGuesses"></span></h4>
+            
+            <h4>Number of Wins: <span id = "numWins"></span></h4>
+            
+            <h4 id = "message"></h4>
+        </div>
+        
+        <div id = "openingScreen">
+            <img src="assets/images/hangman.jpg" alt = "Picture of hangman"></img>
+            <h4>Press Any Letter To Play</h4>
+        </div>
+        
+        <div id = "winScreen">
+            <img src="assets/images/winner.jpg" alt = "We have a Winner"></img>
+            <h4>Press Any Letter To Continue</h4>
+            
+        </div>
+        
+        <div id = "lostScreen">
+            <img src="assets/images/lost.jpg" alt = "Game Over"></img>
+            <h4>GAME OVER - Press Any Letter To Play Again</h4>
+            
+        </div>
+        
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
     </body>
     
 </html>
